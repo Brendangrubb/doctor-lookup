@@ -16,7 +16,7 @@
 
       <div class="row">
 
-        <div class="col-md-7">
+        <div class="col-md-12">
           <div id="user-input">
             <label for="ailment">What's your problem??</label>
             <input id="ailment" class="form-control" type="text" name="ailment" placeholder="enter an ailment! ex. toothache, heachache, backache, heartache..." required>
@@ -25,10 +25,20 @@
           </div>
         </div>
 
-        <div class="col-md-5">
+        <div class="col-md-8">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Photo</th>
+                <th>Doctor</th>
+                <th>Rating<th>
+              </tr>
+            </thead>
+            <tbody id="results">
+            </tbody>
+          </table>
 
-          <ul id="results"><strong><u>LIST OF AILMENTS</u></strong></ul>
-        </div>
+      </div>
 
       </div>
     </div>

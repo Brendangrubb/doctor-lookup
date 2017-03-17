@@ -5,6 +5,7 @@ $(document).ready(function() {
 
   $("#submit").click(function() {
     var ailment = $("#ailment").val();
+    $("#results").empty();
 
     doctor.getNames(ailment);
   });
