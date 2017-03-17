@@ -7,7 +7,7 @@ Doctor.prototype.getNames = function (ailment, displayDoctors) {
   .then(function(result) {
     displayDoctors(result)
   }).fail(function(error){
-    $('#results').append(  "<tr>" +  "<td>" + error.responseJSON.message + "</td>" + "</tr>");
+    $('#results').append(  "<tr>" +  "<td></td><td>Something went wrong, please try again</td>" + "</tr>");
   });
 };
 

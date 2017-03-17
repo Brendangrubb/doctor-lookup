@@ -1,7 +1,7 @@
 var Doctor = require("./../js/doctor.js").doctorModule;
 
 function displayDoctors(result) {
-
+  var doc_image_class;
   for (i = 0; i < result.data.length; i++)
   {
     console.log(result.data[i]);
@@ -17,21 +17,24 @@ function displayDoctors(result) {
     } else {
       var new_patients = "Not at the moment.";
     }
-    //website image parser
+    //website parser
     if (result.data[i].practices[0].website === undefined) {
       var website = "no website given...google them!";
     } else {
       var website = "<a href='" + result.data[i].practices[0].website + "'>" + result.data[i].practices[0].website + "</a>";
     }
     //phone number parser
-    var raw_phone = result.data[i].practices[0].phones[0].number
+    var raw_phone = result.data[i].practices[0].phones[0].number;
     var phone_number = "(" + raw_phone.substr(0,3) + ")" + raw_phone.substr(3,3) + "-" + raw_phone.substr(6,4);
+    //dynamic doctor image class
+    var doc_image_class = i;
+    var doc_blurb = this.data[i].profile.last_name + " - " + result.data[i].profile.bio;
     //add data to form
     $("#results").append
     (
       "<tr>" +
-        "<td>" + "<img src='" + result.data[i].profile.image_url + "' alt= 'Dr. " + result.data[i].profile.last_name + "'>" + "</td>" +
-        "<td>" + result.data[i].profile.first_name + result.data[i].profile.last_name + ", " + result.data[i].profile.title + "</td>" +
+        "<td>" + "<img class='doc_rollover id='" + doc_image_class + "' src='" + result.data[i].profile.image_url + "' alt= 'Dr. " + result.data[i].profile.last_name + "'>" + "</td>" +
+        "<td>" + result.data[i].profile.first_name + " " + result.data[i].profile.last_name + ", " + result.data[i].profile.title + "</td>" +
         "<td>" + rating_image + "</td>" +
         "<td>" + new_patients + "</td>" +
         "<td>" + phone_number + "</td>" +
@@ -40,7 +43,11 @@ function displayDoctors(result) {
     );
   //end for loop
   }
-
+  $('"#' + doc_image_class + '"').click(function() {
+    console.log(doc_blurb);
+    $("#blurb").empty();
+    $("#blurb").append(doc_blurb);
+  });
 }
 
 $(document).ready(function() {
