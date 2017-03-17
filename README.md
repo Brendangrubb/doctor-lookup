@@ -10,7 +10,7 @@
 &nbsp;
 ## Planning
 
-#### UI
+#### Basic UI
 * the user is able to enter an ailment (ex. toothache) into a form on the home page. Based on their input, a list of doctors who are appropriately skilled to handle such an ailment are displayed on the page. The doctor's contact information is also displayed.
 
 #### Initial Files and Dependencies
