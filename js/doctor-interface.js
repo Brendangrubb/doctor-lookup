@@ -4,7 +4,6 @@ function displayDoctors(result) {
   var doc_image_class;
   for (i = 0; i < result.data.length; i++)
   {
-    console.log(result.data[i]);
     //star rating image parser
     if (result.data[i].ratings.length === 0 || result.data[i].ratings[0] === 'undefined') {
       var rating_image = "No rating available";
@@ -26,14 +25,11 @@ function displayDoctors(result) {
     //phone number parser
     var raw_phone = result.data[i].practices[0].phones[0].number;
     var phone_number = "(" + raw_phone.substr(0,3) + ")" + raw_phone.substr(3,3) + "-" + raw_phone.substr(6,4);
-    //dynamic doctor image class
-    var doc_image_class = i;
-    var doc_blurb = this.data[i].profile.last_name + " - " + result.data[i].profile.bio;
     //add data to form
     $("#results").append
     (
       "<tr>" +
-        "<td>" + "<img class='doc_rollover id='" + doc_image_class + "' src='" + result.data[i].profile.image_url + "' alt= 'Dr. " + result.data[i].profile.last_name + "'>" + "</td>" +
+        "<td>" + "<img class='doc_rollover' src='" + result.data[i].profile.image_url + "' alt= 'Dr. " + result.data[i].profile.last_name + "'>" + "</td>" +
         "<td>" + result.data[i].profile.first_name + " " + result.data[i].profile.last_name + ", " + result.data[i].profile.title + "</td>" +
         "<td>" + rating_image + "</td>" +
         "<td>" + new_patients + "</td>" +
@@ -43,11 +39,6 @@ function displayDoctors(result) {
     );
   //end for loop
   }
-  $('"#' + doc_image_class + '"').click(function() {
-    console.log(doc_blurb);
-    $("#blurb").empty();
-    $("#blurb").append(doc_blurb);
-  });
 }
 
 $(document).ready(function() {

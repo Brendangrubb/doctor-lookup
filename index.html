@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <link rel="stylesheet" href="build/css/vendor.css">
     <link rel="stylesheet" href="build/css/styles.css">
     <script type="text/javascript" src="build/js/vendor.min.js"></script>
@@ -15,17 +16,20 @@
       </header>
 
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12">
           <div id="user-input">
-            <label for="ailment">Enter the part of your body that just don't feel right!</label>
+            <label for="ailment">Enter the part of your body that just don't feel right</label>
             <input id="ailment" class="form-control" type="text" name="ailment" placeholder="ex. heart, head, back, teeth, foot..." required>
             <br>
-            <button id="submit" class="btn" type="button">Show Doctors</button>
+            <div class="center">
+              <button id="submit" class="btn btn-lg" type="button">Show Doctors</button>
+            </div>
+            <br>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12">
           <table align="center" class="table">
             <thead>
               <tr>
@@ -40,10 +44,6 @@
             <tbody id="results">
             </tbody>
           </table>
-        </div>
-        <div class="col-md-4">
-          <h3>Doctor Bio</h3>
-          <p id="blurb"></p>
         </div>
       </div>
 

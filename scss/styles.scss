@@ -2,17 +2,32 @@ $gold: #FFF3B2;
 
 body {
   background-color: #efefef;
+  font-family: 'Lora', serif;
+  font-size: 1.5em;
 }
 
 button {
   background-color: $gold;
+
 }
 
 header {
   background-color: $gold;
   margin: 0px 10px 25px 10px;
   padding: 15px;
+  color: black;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: white;
 }
+
+h1 {
+  font-size: 5em;
+}
+
+h3 {
+  font-size: 2.5em;
+}
+
 
 .doc_rollover {
   width: 50px;
