@@ -63,6 +63,7 @@
 #### Refactor
   * try to break site
   * check dryness of code
+  * delete console.logs
   * check spacing
   * doublecheck README for setup instructions and other information
 
