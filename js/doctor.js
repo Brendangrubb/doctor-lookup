@@ -9,12 +9,11 @@ function Doctor() {
 Doctor.prototype.getNames = function (ailment) {
   $.get('https://api.betterdoctor.com/2016-03-01/doctors?query=' + ailment + '&location=45.5231%2C-122.6765%2C%205&user_location=45.5231%2C-122.6765&skip=0&limit=20&user_key=' + apiKey)
   .then(function(result) {
-    console.log(result.data[1].ratings);
-    console.log(result.data[0].ratings[0].image_url_small);
+
 
     for (i = 0; i < result.data.length; i++)
     {
-      if (result.data[i].ratings.length === 0) {
+      if (result.data[i].ratings.length === 0 || result.data[i].ratings[0] === 'undefined') {
         var rating_image = "No rating available";
       } else {
         var rating_image = "<img src='" + result.data[i].ratings[0].image_url_small + "'>";
