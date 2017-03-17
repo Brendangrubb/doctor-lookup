@@ -10,6 +10,9 @@
 &nbsp;
 ## Planning
 
+#### UI
+* the user is able to enter an ailment (ex. toothache) into a form on the home page. Based on their input, a list of doctors who are appropriately skilled to handle such an ailment are displayed on the page. The doctor's contact information is also displayed.
+
 #### Initial Files and Dependencies
 * write README
 * initialize git, add repository
@@ -31,24 +34,20 @@
     * add watchers to server task for js, bower and scss builds
     * gulp-sass (_CSS preprocessor_)
     * gulp-sourcemaps (_allows SCSS to be read as CSS by browser_)
-
 * **Bower**
   * install bower via npm
   * initialize bower
   * install (--save) jquery, bootstrap
   * add bootstrap override to bower-files require
   * add tasks to concat bowerJS and bowerCSS files and add new task to call those two together
-
 * add script and link tags to index head for .js and css builds
 * add the following to .gitignore - .env, node_modules/, bower_components/, build/, tmp/
 * test jquery & css
 
-#### UI
-* the user is able to enter an ailment (ex. toothache) into a form on the home page. Based on their input, a list of doctors who are appropriately skilled to handle such an ailment are displayed on the page. The doctor's contact information is also displayed.
-
 #### Populate Files
-* populate index and js files
-* add exports/requires to back-end/front-end js files
+* write form in index.html
+* take form input in doctor-interface.js
+* add exports/require to doctor/doctor-interface js files
 
 #### Implement Api
 * get key from Better Doctors and add to .evi file
