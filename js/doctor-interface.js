@@ -1,8 +1,13 @@
+
+
 $(document).ready(function() {
 
-  $("#works").click(function() {
-    alert("SURE DOES!!!!");
+  $("#submit").click(function() {
+    var ailment = $("#ailment").val();
+    alert(ailment);
+    $("#results").append("<li>" + ailment + "</li>");
   });
+
 
 
 });
