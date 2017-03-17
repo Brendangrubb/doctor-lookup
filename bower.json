@@ -1,0 +1,30 @@
+{
+  "name": "doctor-lookup",
+  "description": "an application to help users find doctors that can meet their needs",
+  "main": "gulpfile.js",
+  "authors": [
+    "Brendan Grubb"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "doctors",
+    "patients",
+    "health",
+    "care",
+    "api",
+    "better",
+    "doctors"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.0"
+  }
+}

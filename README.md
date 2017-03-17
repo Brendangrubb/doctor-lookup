@@ -4,7 +4,7 @@
 
 &nbsp;
 ## Description
-**Doctor Lookup** is a Javascript application that demonstrates my ability to manipulate and display information gathered from API calls. I have used Node & Gulp to create an asset pipeline of dependencies which allows for a more dynamic and modern experience. With this app, the user can enter a medical ailment into the search bar and get a list of doctors from [Better Doctor.com](https://developer.betterdoctor.com) available to help with their issue.
+**Doctor Lookup** is a Javascript application that demonstrates my ability to manipulate and display information gathered from API calls. I have used Node & Gulp to create an asset pipeline of dependencies which allows for a more dynamic and modern experience. With this app, the user can enter a medical ailment into the search bar and get a list of doctors from [Better Doctor.com](http://betterdoctor.com/) available to help with their issue.
 
 
 &nbsp;
@@ -69,7 +69,7 @@
 &nbsp;
 ## Setup/Installation Requirements
 ##### _To view and use this application:_
-* It is necessary to download and install the package manager [npm](https://www.npmjs.com) to use this application
+* It is necessary to download and install the package managers [npm](https://www.npmjs.com) and [bower](https://bower.io/) to use this application
 * You must also request your own API key from [Better Doctor](https://developer.betterdoctor.com)
 * Go to my [Github repository](https://github.com/Brendangrubb/doctor-lookup)
 * Download the zip file via the green button and unzip the file
