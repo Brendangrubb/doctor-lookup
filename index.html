@@ -10,34 +10,36 @@
   <body>
     <div class="container">
       <header>
-        <h1>Doctor Lookup</h1>
+        <h1>Portland Doctor Lookup</h1>
         <h3>Find doctors that can cure what ails ya!</h3>
       </header>
 
       <div class="row">
-
         <div class="col-md-12">
           <div id="user-input">
-            <label for="ailment">What's your problem??</label>
-            <input id="ailment" class="form-control" type="text" name="ailment" placeholder="enter an ailment! ex. toothache, heachache, backache, heartache..." required>
+            <label for="ailment">Enter the part of your body that just don't feel right!</label>
+            <input id="ailment" class="form-control" type="text" name="ailment" placeholder="ex. heart, head, back, teeth, foot..." required>
             <br>
             <button id="submit" class="btn" type="button">Show Doctors</button>
           </div>
         </div>
+      </div>
 
-        <div class="col-md-8">
-          <table class="table">
+      <div class="row">
+        <div class="col-md-12">
+          <table align="center" class="table">
             <thead>
               <tr>
                 <th>Photo</th>
                 <th>Doctor</th>
-                <th>Rating<th>
+                <th>Rating</th>
+                <th>Accepting New Patients?</th>
+                <th>Contact</th>
               </tr>
             </thead>
             <tbody id="results">
             </tbody>
           </table>
-
       </div>
 
       </div>

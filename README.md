@@ -57,9 +57,11 @@
 * implement callback functions
 
 #### Style
+* choose font
+* set media page sizes
 
 #### Refactor
-  * test site
+  * try to break site
   * check dryness of code
   * check spacing
   * doublecheck README for setup instructions and other information
