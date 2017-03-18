@@ -1,14 +1,25 @@
 $gold: #FFF3B2;
+$grey: #efefef;
 
 body {
-  background-color: #efefef;
+  background-color: $grey;
   font-family: 'Lora', serif;
   font-size: 1.5em;
 }
 
 button {
   background-color: $gold;
+}
 
+h1 {
+  font-size: 5em;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: $grey;
+  text-shadow: 1px 2px black;
+}
+
+h3 {
+  font-size: 2.5em;
 }
 
 header {
@@ -16,18 +27,11 @@ header {
   margin: 0px 10px 25px 10px;
   padding: 15px;
   color: black;
-  -webkit-text-stroke-width: .5px;
-  -webkit-text-stroke-color: white;
 }
 
-h1 {
-  font-size: 5em;
+.center {
+  text-align: center;
 }
-
-h3 {
-  font-size: 2.5em;
-}
-
 
 .doc_rollover {
   width: 50px;
@@ -36,8 +40,4 @@ h3 {
     transition: 0.5s;
   }
   transition: 0.5s;
-}
-
-.center {
-  text-align: center;
 }
