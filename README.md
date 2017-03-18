@@ -72,16 +72,18 @@
 ## Setup/Installation Requirements
 ##### _To view and use this application:_
 * It is necessary to download and install the package managers [npm](https://www.npmjs.com) and [bower](https://bower.io/) to use this application
-* You must also request your own API key from [Better Doctor](https://developer.betterdoctor.com)
+* You must also request your own API key from [Better Doctor](https://developer.betterdoctor.com).
 * Go to my [Github repository](https://github.com/Brendangrubb/doctor-lookup)
 * Download the zip file via the green button and unzip the file
 * Open Terminal and navigate to **_doctor-lookup-master_** project folder
-* Type the following commands:
+* Open the project folder in your text editor and create a file called .env
+  * Type the following text at the top of the file:
+    * exports.apiKey = _"YOUR API KEY HERE"_;
+* Type the following commands in Terminal:
   * npm install
   * bower install
   * gulp build --production
   * gulp serve
-* Open your text editor and add your API key from [Better Doctor](https://developer.betterdoctor.com) to the .env file
 * The application will load in your browser and be ready to use!
 
 &nbsp;
